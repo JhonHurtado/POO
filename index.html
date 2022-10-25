@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="table1">
+          <table class="t1">
+            <thead>
+              <th colspan="2">Registro Animal</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Id Animal</td>
+                <td><input type="text" class="idanimal" id="idanimal" value="01548"></td>
+              </tr>
+              <tr>
+                <td>Nombre Animal</td>
+                <td><input type="text" class="nomanimal" id="nomanimal" value="rocko"></td>
+              </tr>
+              <tr>
+                <td>tipo Animal</td>
+                <td>
+                  <select name="animales" id="animales">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="cuy">Cuy</option>
+                    <option value="seleccionar" selected>Seleccionar...</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Vacunas</td>
+                <td>
+                  <input type="checkbox" name="rabia" id="V_Rabia">
+                  <label for="rabia">Rabia</label><br>
+                  <input type="checkbox" name="moquillo" id="V_Moquillo">
+                  <label for="moquillo">Moquillo</label><br>
+                  <input type="checkbox" name="covid" id="V_covid">
+                  <label for="covid">Covid</label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="button" class="btn btn-primary mb-3" value="Datos animal"
+                    onclick="document.getElementById(instanimal.metodo(idanimal.value,nomanimal.value,animales.value,V_Rabia.checked,V_Moquillo.checked,V_covid.checked))">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="impri"></div>
+      </div>
+    </div>
+
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <div><input type="button" value="ver" class="btn btn-primary mb-3" onclick="elementocreado()"></div>
+        <div><input type="button" value="nueva funcion" class="btn btn-primary mb-5" onclick="implementar()"></div>
+        <div><input type="button" value="comprobar" class="btn btn-primary mb-5" onclick="comprobar()"></div>
+        <div><input type="button"  class="btn btn-primary mb-3"value="cargar tabla" id="btn-trabajo"></div>
+
+
+
+        
+
+        </div>
+      </div>
+      <div class="row">
+      <div class="row">
+        <label for="nombre">nombre</label>
+        <input type="text" class="col-3 mb-3"id="nombre"><br></div>
+      <div class="row">
+        <label for="direcctorio">apellido</label>
+        <input type="text" class="col-3 mb-3"id="direcctorio"><br></div>
+      <div class="row">
+        <label for="apellidos">cargo</label>
+        <input type="text" class="col-3 mb-3"id="apellidos"><br></div>
+      <div class="row">
+        <label for="telefono">telefono</label>
+        <input type="number" class="col-3 mb-3"id="telefono"><br></div>
+      <div class="row"><div id="div_button"></div></div>
+    </div>
+
+      <div class="row mb-3">
+        
+      <div class="row" id="divfragment"></div>
+
+
+      <div class="row mb-3 my-3" id="impresion"></div>
+      <div class="row mb-3 my-3" id="tablas"></div>
+    </div>
+  </div>
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+              class="bi bi-facebook"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+              class="bi bi-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+              class="bi bi-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+              class="bi bi-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+              class="bi bi-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+              class="bi bi-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
