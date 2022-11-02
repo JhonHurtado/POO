@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Proyecto TRAMO tabla Administrador</h1>
+
+        <form action="" class="frmAdminitrador m-4 needs-validation" novalidate id="frmAdminitrador">
+            <div class="row" >
+                <div class="form-floating mb-3 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input type="number" class="form-control clIdAdministrador" name="txtnameIdAdministrador"
+                        id="txtIdAdministrador" placeholder="Identificacion Administrador" required>
+                    <label for="txtIdAdministrador" id="lblIdAdministrador">Identificacion Administrador</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input type="text" class="form-control clNombreAdministrador" id="txtIdNombreAdministrador" required
+                        placeholder="Contraseña Administrador">
+                    <label for="txtIdNombreAdministrador">Nombre Completo Administrador</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input type="password" class="form-control clContrasenaAdministrador"
+                        id="txtIdContrasenaAdministrador" required placeholder="Contraseña Administrador">
+                    <label for="txtIdContrasenaAdministrador">Contraseña Administrador</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input type="email" class="form-control clCorreoAdministrador" id="txtIdCorreoAdministrador"
+                        name="txtNameCorreoAdministrador" required placeholder="name@example.com">
+                    <label for="txtIdCorreoAdministrador">Correo Administrador</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input type="number" class="form-control clIdNumeroTelefonoAdministrador"
+                        id="txtIdNumeroTelefonoAdministrador" required placeholder="Numero de Telefono">
+                    <label for="txtIdNumeroTelefonoAdministrador">Numero de Telefono</label>
+                </div>
+
+                <div >
+                    <div id="form"></div>
+                    <input type="button" value="Enviar Datos"
+                        onclick="InsTramoAdministrador.fnSetDatosTramoAdministrador(txtIdAdministrador.value,txtIdNombreAdministrador.value,txtIdContrasenaAdministrador.value,txtIdCorreoAdministrador.value,txtIdNumeroTelefonoAdministrador.value)"
+                        class="btn btn-primary btn-md m-3 clBtnFrmAdministrador" id="btn-enviar">
+                    <input type="reset" value="Limpiar Datos" class="btn btn-warning btn-md m-3 clBtnFrmAdministrador" id="reset">
+                </div>
+
+
+            </div>
+        </form>
+        <div class="row mb-3 my-3" id="tablas"></div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="JS/proyecto.js"></script>
+    <script src="JS/bootstrap.js"></script>
+</body>
+
+</html>
