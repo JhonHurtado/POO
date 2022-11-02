@@ -87,7 +87,7 @@ class animal {
         }
       }
     }
-    var fila=('<p>el codigo del animal es '+this.idanim+' el nombre del animal es  '+this.nomanim+'<br> el tipo de animal es  '+this.tipoanim+'  y tiene las vacunas contra '+this.vacuna+' </p>');
+    var fila=('<p class="bg-warning rounded">el codigo del animal es '+this.idanim+' el nombre del animal es  '+this.nomanim+'<br> el tipo de animal es  '+this.tipoanim+'  y tiene las vacunas contra '+this.vacuna+' </p>');
 
     var btn = document.createElement("p");
        btn.innerHTML=fila;
@@ -171,7 +171,7 @@ function comprobar(){
 
   for(i=0;i<=5;i++){
     const creodiv=document.createElement("div");
-    creodiv.className="col mx-3 mb-3";
+    creodiv.className="col-3 mx-2 mb-3 bg-warning rounded";
     creodiv.textContent=`numero de div ${i}`;
     fragmento2.appendChild(creodiv);
     console.log("numero de items en fragmento "+fragmento2.childElementCount);
